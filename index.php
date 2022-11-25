@@ -157,7 +157,7 @@
         echo "<div class='col-2'>";
 
         echo "<div class='card'>";
-        echo "<a href='halamanKategori.php'>";        
+        echo "<a href='halamanKategori.php?cari=". $row['nama'] ."'>";        
         echo "<img src='" . $row['gambar'] . "' alt='Avatar'>";
         echo "<div class='container-text'>";
         echo "<p>" . $row['nama'] . "</p>";
