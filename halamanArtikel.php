@@ -43,6 +43,10 @@
    <?php
         echo "<div class='judul-artikel'>";
         echo "<h3>" . $row['judul'] . "</h3>";
+        echo "<p>" . $row['penulis_artikel'] . "</p>";
+        echo "</div>";
+        echo "<div class='gambar-artikel'>";
+        echo "<img src='" . $row['foto'] . "' alt='Avatar'>";
         echo "</div>";
         echo "<div class='container-artikel'>";
        // while ($) {

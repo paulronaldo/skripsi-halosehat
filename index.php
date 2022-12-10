@@ -20,42 +20,11 @@
       crossorigin="anonymous"
     /> -->
     <title>HaloSehat</title>
+
   </head>
   <body>
     <!-- header -->
     <?php include 'include/header.php';?>
-
-    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner"> -->
-        <!-- <div class="carousel-item active">
-        <div class="slider d-block w-100">
-          <div class="slider-text">
-            <h1>Temukan Dokter Terbaikmu</h1>
-            <p>
-              Temukan dokter terbaikmu dengan mudah dan cepat. Temukan juga berbagai
-              informasi kesehatan lainnya.
-            </p>
-          </div>
-            <img src="img/dokter/home.webp" alt="gambar">
-        </div> -->
-          <!-- <img src="img/komunitas/Banner - berat  bedan ideal.webp" class="d-block w-100" alt="..."> -->
-        <!-- </div>
-        <div class="carousel-item active">
-          <img src="img/komunitas/Banner - berat  bedan ideal.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/komunitas/Banner - berat  bedan ideal.webp" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
 
 
     <div class="slider">
@@ -66,10 +35,13 @@
           informasi kesehatan lainnya.
         </p>
       </div>
+      <div>
         <img src="img/dokter/home.webp" alt="gambar">
+      </div>
     </div>
     
     <!-- berita terbaru -->
+    <!-- <div></div> -->
     <div class="kategori">
       <p>Berita Terbaru</p>
       <a href="pencarianArtikel.php?new=true" id="other">
@@ -178,49 +150,7 @@
     ?>
     </div>    
     </div>    
-    <!-- <div class="card-kategori">
-      <div class="card">
-        <img src="img/kategori/alergi.webp" alt="Avatar" />
-        <div class="container">
-          <p>Alergi</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/kategori/jantung.webp" alt="Avatar" />
-        <div class="container">
-          <p>Kesehatan Jantung</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/kategori/paru.webp" alt="Avatar" />
-        <div class="container">
-          <p>Kesehatan Pernapasan</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/kategori/p kanker.webp" alt="Avatar" />
-        <div class="container">
-          <p>Penyakit Kanker</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/kategori/urologi.webp" alt="Avatar" />
-        <div class="container">
-          <p>Kesehatan Urologi</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="img/kategori/kulit.webp" alt="Avatar" />
-        <div class="container">
-          <p>Kesehatan Kulit</p>
-        </div>
-      </div>
-    </div> -->
+    
 
     <!-- Cek Kesehatan -->
     <div class="banner-title">

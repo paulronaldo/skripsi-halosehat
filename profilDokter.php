@@ -21,29 +21,22 @@
   <body>
     <!-- header -->
     <?php include 'include/header.php';?>
+    <?php
+      include 'db_connection.php';
+      $id = $_GET['id'];
+      $query = "SELECT * FROM dokter where id = '$id'";
+      $result = mysqli_query($conn, $query);
+      $row2 = mysqli_fetch_assoc($result);
+    ?>
 
     <!-- <div class="nama-obat">
       <h3>Panadol</h3>
     </div> -->
     <div class="container-profil">
       <div class="isi-profil">
-        <div class="poin-profil">
-          <h4>Profil</h4>
-          <!-- <h5>Apa Fungsi Panadol</h5> -->
-          <p>
-            drg. Adeline Clarissa, Sp.KG adalah seorang endodontis atau dokter
-            spesialis konservasi gigi. Spesialisasi endodontis antara lain untuk
-            menjaga dan mempertahankan gigi, baik fungsi maupun estetiknya
-            seperti perawatan gigi berlubang, perawatan akar gigi, ataupun
-            perawatan saraf gigi. Adel merupakan lulusan Fakultas Kedokteran
-            Gigi Universitas Indonesia (2015). Ia lalu melanjutkan spesialis
-            konservasi gigi di Fakultas Kedokteran Gigi Universitas Indonesia
-            (2020). Saat ini Adel aktif berpraktik di Audy Dental Pantai Indah
-            Kapuk dan Audy Dental Serpong, . Adel juga tercatat sebagai anggota
-            aktif Persatuan Dokter Gigi Indonesia (PDGI) dan Ikatan Konservasi
-            Gigi Indonesia (IKORGI).
-          </p>
-        </div>
+      <?php
+            echo $row2['profil'];
+      ?>
         
       </div>
 
@@ -54,18 +47,18 @@
               <p>Endodontis (Spesialis Konservasi Gigi)</p>
             </div> -->
             <?php
-              include 'db_connection.php';
-              $nama = $_GET['nama'];
-              $query = "SELECT * FROM dokter where nama = '$nama'";
-          $result = mysqli_query($conn, $query);
-          while($row = mysqli_fetch_array($result)){
+          //     include 'db_connection.php';
+          //     $nama = $_GET['nama'];
+          //     $query = "SELECT * FROM dokter where nama = '$nama'";
+          // $result = mysqli_query($conn, $query);
+          // while($row = mysqli_fetch_array($result)){
 
             echo "<div class='card-dokter'>";
-            echo "<img src='" . $row['foto'] . "' alt='dokter' />";
-            echo "<h4>" . $row['nama'] . "</h4>";
-            echo "<p>" . $row['spesialisasi'] . "</p>";
+            echo "<img src='" . $row2['foto'] . "' alt='dokter' />";
+            echo "<h4>" . $row2['nama'] . "</h4>";
+            echo "<p>" . $row2['spesialisasi'] . "</p>";
             echo "</div>";
-          }
+          // }
             ?>
 
         <button class="btn btn-primary" type="submit" id="button-ask">Tanya dokter</button>

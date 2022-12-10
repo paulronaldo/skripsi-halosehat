@@ -44,7 +44,7 @@
     <div class="judul-artikel-obat">
       <h3><?php echo $nama?></h3>
     </div>
-    <div class="container-artikel">
+    <div class="container-artikel-obat">
       <div class="nav-artikel">
         <ul class="map-obat">
           <li>
@@ -75,7 +75,7 @@
       <div class="penulis-artikel">
         <div>
           <p>
-            Ditulis oleh Ajeng Pratiwi Diperbarui <span>Nov 03, 2021</span> Ditinjau secara
+            Ditulis oleh Ajeng Pratiwi, diperbarui <span>3 November 2021</span>, ditinjau secara
             medis oleh dr. Tania Savitri
           </p>
         </div>
@@ -83,6 +83,7 @@
     </div>
 
     <!-- footer -->
+    <?php include 'include/footer.php';?>
     <!-- <div>
       <hr style="border: 300px; color:red;">  
     </div> -->

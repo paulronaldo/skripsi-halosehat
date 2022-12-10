@@ -66,8 +66,8 @@
             alt="Avatar"
             /> -->
             <h3><?php echo $_GET["cari"];?></h3>
-            <p>Alergi bisa terjadi akibat apa saja, dari makanan, debu, hingga hewan. Gejalanya pun bermacam-macam. Ketahui apa saja jenis alergi, gejala, serta cara mengatasinya di artikel berikut ini.</p>
-            <!-- <p><?php //echo $rowKategori["deskripsi"];?></p> -->
+            <!-- <p>Alergi bisa terjadi akibat apa saja, dari makanan, debu, hingga hewan. Gejalanya pun bermacam-macam. Ketahui apa saja jenis alergi, gejala, serta cara mengatasinya di artikel berikut ini.</p> -->
+            <p><?php echo $rowKategori["deskripsi"];?></p>
     </div>
 
     <div class="kategori">

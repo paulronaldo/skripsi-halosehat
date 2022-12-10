@@ -30,11 +30,11 @@
       <ul class="login">
         <li>
           <!-- <a href="#">Daftar</a> -->
-          <button id="daftar">Daftar</button>
+          <a href="login.php"><button id="daftar">Daftar</button></a>
         </li>
         <li>
           <!-- <a href="#">Masuk</a> -->
-          <button id="masuk">Masuk</button>
+          <a href="login.php"><button id="masuk">Masuk</button></a>
         </li>
       </ul>
   </header>
@@ -58,7 +58,7 @@
             var menuName = link.id.toLowerCase();
             var temp = link.id.toLowerCase().split("-");
             var activeMenuName = activeMenu.toLowerCase();
-            if ((activeMenuName === "/skripsi-71180375/" || activeMenuName === "/skripsi-71180375/index.php") && menuName === "home") {
+            if ((activeMenuName === "/skripsi-halosehat/" || activeMenuName === "/skripsi-halosehat/index.php") && menuName === "home") {
               link.classList.add('active');
             }
             if(temp.length > 1){

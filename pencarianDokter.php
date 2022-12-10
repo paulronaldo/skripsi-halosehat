@@ -66,7 +66,7 @@
               echo "<div class='detail-dokter'>";
                   echo "<h4>" . $row['nama'] . "</h4>";
                   echo "<p>". $row['spesialisasi'] . "</p>";
-                  echo "<a href='profilDokter.php?nama=". $row['nama'] ."'><h5>lihat selengkapnya></h5></a>";
+                  echo "<a href='profilDokter.php?id=". $row['id'] ."'><h5>lihat selengkapnya></h5></a>";
               echo "</div>";
               echo "</div>";
             }
@@ -82,7 +82,7 @@
             echo "<div class='detail-dokter'>";
                 echo "<h4>" . $row['nama'] . "</h4>";
                 echo "<p>". $row['spesialisasi'] . "</p>";
-                echo "<a href='profilDokter.php?nama=". $row['nama'] ."'><h5>lihat selengkapnya></h5></a>";
+                echo "<a href='profilDokter.php?id=". $row['id'] ."'><h5>lihat selengkapnya></h5></a>";
             echo "</div>";
             echo "</div>";
           }
@@ -95,9 +95,7 @@
     
     
     
-    <!-- footer -->
-    <!-- header -->
-    <?php include 'include/footer.php';?>
+    
     <!-- <div>
       <hr style="border: 300px; color:red;">  
     </div> -->
